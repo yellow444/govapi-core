@@ -1,6 +1,6 @@
 # Public Services and Public APIs by Country
 
-[Global index](GLOBAL_INDEX.md) It covers 193 UN member states and five additional GTMI positions, 33 separate official sources for interfaces, documentation and clearance, and the cards below describe specific interfaces, tolerances, and the first scenario that can be verified for GovAPI Core or Bell.
+[Global index](GLOBAL_INDEX.md) It covers 193 UN member states and five additional GTMI positions, 58 of which have separate official sources for interfaces, documentation and clearance, and the cards below describe specific interfaces, tolerances and the first scenario that can be verified for GovAPI Core or Bell.
 
 | Country | Integration | Priority for the project | Plugin |
 |---|---|---|---|
@@ -16,5 +16,10 @@
 | [Norway](no/README.md) | Altinn Dialogporten and Correspondence | Open analogue and example of supplier authorization | — |
 | [Poland](pl/README.md) | e-Doręczenia API | Check the test box, archive and delivery status | — |
 | [United Kingdom](gb/README.md) | GOV.UK Forms and Notify | Open components of receiving forms and sending notifications | — |
+| [Austria](at/README.md) | Mein Postkorb Web Service | Check the rules of automatic receipt of state mail | — |
+| [Sweden](se/README.md) | Mina Meddelanden | Contradict the contracts of the sender and the operator of the box | — |
+| [Spain](es/README.md) | DEHú, LEMA and FACE | Check receipt of state mail and a separate cycle of public procurement accounts | — |
+| [Egypt](eg/README.md) | ETA eInvoicing and eReceipt | Check Filing, Status and Callback | — |
+| [Costa Rica](cr/README.md) | Comprobantes Electrónicos | Comparison of filing, status and result of processing | — |
 
 When adding countries, use [cardboard](TEMPLATE.md)For public sources, record the date and version of the contract when it is published; confirm rights to read statements and notifications for a specific role; publish the SDK code, free product tariff and permission to request real data are three separate properties.
