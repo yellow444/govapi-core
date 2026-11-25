@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "de",
+  "country": "Germany",
+  "platform": "FIT-Connect",
+  "summary": "Submit applications and review case events through the government delivery service.",
+  "bell": false,
+  "fields": {
+    "organization": "Demo operator",
+    "destination": "Sample recipient ID"
+  },
+  "steps": [
+    {
+      "title": "Choose the environment and role",
+      "detail": "Start in TEST. Choose the sender or recipient role and configure separate test credentials.",
+      "source": "FIT-Connect environments",
+      "url": "https://docs.fitko.de/fit-connect/docs/getting-started/environments/"
+    },
+    {
+      "title": "Verify the application contract",
+      "detail": "Use the current schema. Check the required fields, attachment formats, and delivery endpoint.",
+      "source": "SDK guide",
+      "url": "https://docs.fitko.de/fit-connect/docs/sdks/overview/"
+    },
+    {
+      "title": "Read an application event",
+      "detail": "Match the log entry to the operation ID and retain the event to verify the result.",
+      "source": "FIT-Connect event log",
+      "url": "https://docs.fitko.de/fit-connect/docs/getting-started/event-log/get-events/"
+    }
+  ]
+}

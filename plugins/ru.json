@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "ru",
+  "country": "Russia",
+  "platform": "EPGU",
+  "summary": "Connect an organization's information system to Gosuslugi.",
+  "bell": true,
+  "fields": {
+    "organization": "Demo organization name",
+    "service": "Service code"
+  },
+  "steps": [
+    {
+      "title": "Identify the service and environment",
+      "detail": "Find the service in the partner catalog. Record the specification and verify the organization's TEST access separately.",
+      "source": "EPGU API catalog",
+      "url": "https://partners.gosuslugi.ru/catalog/api_for_gu"
+    },
+    {
+      "title": "Verify credentials and signing requirements",
+      "detail": "Check the system registration, organization, certificate, and service contract. Use sample values in the demo.",
+      "source": "EPGU guide",
+      "url": "https://github.com/yellow444/epgu"
+    },
+    {
+      "title": "Verify the receipt",
+      "detail": "Match the application number to the response. Identify the notification channel and the authorized recipient role separately.",
+      "source": "EPGU Bell",
+      "url": "https://github.com/yellow444/epgu-bell"
+    }
+  ]
+}

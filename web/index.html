@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GovAPI Hub</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <div class="shell">
+    <aside>
+      <div class="brand"><span class="mark" aria-hidden="true">G</span>GovAPI Hub</div>
+      <nav aria-label="Connected countries">
+        <span class="nav-label">Connected countries</span>
+        <div id="countries"></div>
+      </nav>
+    </aside>
+    <main>
+      <p id="status" role="status">Loading connected countries…</p>
+      <section id="workspace" hidden>
+        <header>
+          <p id="country" class="eyebrow"></p>
+          <h1 id="platform"></h1>
+          <p id="summary"></p>
+        </header>
+        <div class="workspace-grid">
+          <section class="guide" aria-labelledby="guide-heading">
+            <h2 id="guide-heading">Connection guide</h2>
+            <ol id="steps"></ol>
+          </section>
+          <section class="card" aria-labelledby="demo-heading">
+            <h2 id="demo-heading">Demo application</h2>
+            <p>Enter sample data to validate the fields and generate a local receipt.</p>
+            <form id="demo">
+              <div id="fields"></div>
+              <button type="submit" class="primary">Get receipt</button>
+            </form>
+            <output id="receipt" role="status" hidden></output>
+          </section>
+        </div>
+        <section id="bell" class="card bell" hidden>
+          <div class="bell-title">
+            <h2>Notifications</h2>
+            <button id="refresh" class="quiet">Refresh</button>
+          </div>
+          <p id="feed-status" role="status"></p>
+          <ul id="messages"></ul>
+        </section>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

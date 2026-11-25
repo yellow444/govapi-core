@@ -1,0 +1,32 @@
+{
+  "schema": 1,
+  "id": "kz",
+  "country": "Kazakhstan",
+  "platform": "Smart Bridge",
+  "summary": "Connect an information system to government integration services.",
+  "bell": false,
+  "fields": {
+    "organization": "Demo organization name",
+    "service": "Sample service code"
+  },
+  "steps": [
+    {
+      "title": "Choose an integration service",
+      "detail": "Find the service owner, specification, and connection requirements. Verify that your role can access the service.",
+      "source": "Smart Bridge catalog",
+      "url": "https://new-sb.egov.kz/?lang=ru"
+    },
+    {
+      "title": "Prepare the connection request",
+      "detail": "Confirm the test environment, network setup, organization, and certificate with the operator.",
+      "source": "Smart Bridge connection guide",
+      "url": "https://new-sb.egov.kz/docs/ru/guides/kak-podklyuchitsya-k-servisu-na-smartbridge"
+    },
+    {
+      "title": "Identify how to receive a response",
+      "detail": "Check whether responses are synchronous or asynchronous. Agree on a delivery endpoint for asynchronous responses.",
+      "source": "Public services catalog",
+      "url": "https://new-sb.egov.kz/docs/ru/guides/kak-rabotat-s-gosuslugami"
+    }
+  ]
+}
