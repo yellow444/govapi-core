@@ -1,0 +1,289 @@
+# Global directory of government services and APIs
+
+The index covers **198 jurisdictions**, including **193 UN member states** and five additional GTMI jurisdictions. The index includes separate technical or regulatory references for 33 jurisdictions.
+
+The baseline uses World Bank GTMI 2025 indicators I-19 for online public service portals, I-4 for government service buses, and I-3 for interoperability frameworks. A portal or a service bus does not establish API access for an external system. GTMI links are starting points. No live government API calls were made for this review.
+
+**Reference available** links to the API and access section. **GTMI indicators only** indicates that no separate API or access source was reviewed in this version.
+
+[World Bank GovTech Dataset 2025, CC BY 4.0](https://datacatalog.worldbank.org/search/dataset/0037889/govtech-dataset) · [Original XLSX](https://datacatalogfiles.worldbank.org/ddh-published/0037889/DR0095721/WBG_GovTech_Dataset_Dec2025.xlsx) · [Review of UN 2026](https://ekap.desa.un.org/Reports/Detail/5)
+
+## APIs and access
+
+| Jurisdiction | Interface type | Confirmed capability and access conditions | Source |
+|---|---|---|---|
+| [Russian Federation · RUS](ru/README.md) | Filing and status | The EPGU publishes a catalogue of applied contracts. The right to call depends on the service, the contour and the powers of the IP. | [Catalogue of EPSU](https://partners.gosuslugi.ru/catalog/api_for_gu) |
+| [Kazakhstan · KAZ](kz/README.md) | Exchange and answers | Smart Bridge describes the connection to a particular service and the delivery points for asynchronous responses. | [Connecting a Smart Bridge](https://new-sb.egov.kz/docs/ru/guides/kak-podklyuchitsya-k-servisu-na-smartbridge) |
+| [Germany · DEU](de/README.md) | Presentation and events | FIT-Connect publishes the Submission API, event log and public TEST. | [Submission API](https://docs.fitko.de/fit-connect/docs/apis/submission-api/) · [Journal of events](https://docs.fitko.de/fit-connect/docs/getting-started/event-log/overview/) · [Environments](https://docs.fitko.de/fit-connect/docs/getting-started/environments/) |
+| [Czech Republic · CZE](cz/README.md) | Government mailbox | ISDS supports third-party clients through official web services. | [ISDS web services](https://datovka.gov.cz/info/cs/help/15.3.text.html) |
+| [Kyrgyzstan · KGZ](kg/README.md) | Exchange and test adapters | Tunduk publishes the connection procedure and training adapters for the X-Road. Admission to the status of a particular service is still to be confirmed. | [Connection.](https://tunduk.gov.kg/en/be-user) · [An example of an adapter](https://wiki.tunduk.kg/doku.php?id=dotnet-adapters-demo) |
+| [Uzbekistan · UZB](uz/README.md) | Interagency exchanges | There's an exchange platform and a user status check, and a third-party interface to the status of a particular service has not yet been confirmed. | [Platform](https://dgov.uz/en/solution/detail/16/) · [Verification of the application](https://my.gov.uz/ru/page/checking-status-application) |
+| [Japan · JPN](jp/README.md) | Filing and notification | Mynaportal publishes separate e-Shinsei specifications and notification information. Access depends on the API chosen and the provider's role. | [Feed.](https://developers.digital.go.jp/documents/mynaportal-api/specification/eshinsei/) · [Notifications](https://developers.digital.go.jp/documents/mynaportal-api/specification/notificationinfo/) |
+| Singapore · SGP | Identification | Singpass documents Myinfo's app registration and test personas, and agency notifications through this interface have not yet been confirmed. | [Connection.](https://docs.developer.singpass.gov.sg/docs/getting-started/quick-start) · [Test personas](https://docs.developer.singpass.gov.sg/docs/testing/myinfo-test-personas) |
+| India · IND | Documents | DigiLocker publishes the procedure for connecting to the exchange of documents, access to UMANG statuses must be checked separately. | [DigiLocker Data Exchange](https://www.digilocker.gov.in/web/data-exchange) · [API Setu](https://apisetu.gov.in/about-marketplace) |
+| Republic of Korea · KOR | Public data | Government24 publishes a description of a specific Open API, but no separate application is available. | [Documentation Government24](https://www.gov.kr/portal/ntcItm/83584) |
+| Malaysia · MYS | State exchange | MyGDX documents participation and data sharing. No status or notification rights have been established by the external system. | [MyGDX Management](https://www.mygdx.gov.my/SOP/1772012073.MyGDX_F1_-_KIT_PENYERTAAN_MyGDX_%28Jan26%29.pdf) |
+| United Arab Emirates · ARE | Identification and catalogue | UAE PASS publishes staging for PoC, and the state maintains an API directory. Access to a specific industry service is agreed separately. | [Staging UAE PASS](https://docs.uaepass.ae/quick-start-guide-uae-pass-staging-environment/conduct-a-poc-with-uae-pass-authentication) · [API Marketplace](https://u.ae/en/about-the-uae/digital-uae/digital-transformation/platforms-and-apps/uae-api-marketplace) |
+| Saudi Arabia · SAU | API directory | API360 and the DGA guide provide an entry point. the status API or incoming correspondence for a specific recipient has not yet been confirmed. | [API360](https://api360.sa/?lang=en) · [DGA leadership](https://dga.gov.sa/sites/default/files/2023-04/Guideline%20Application%20Programming%20Interfaces%20%28APIs%29%20%E2%80%93%20V1.0_2.pdf) |
+| [Finland · FIN](fi/README.md) | Government mailbox | Suomi.fi Messages documents the REST API and the integration test procedure. Applicability depends on the role of the connected organization. | [Technical description](https://kehittajille.suomi.fi/services/messages/technical-description) · [Testing](https://kehittajille.suomi.fi/services/messages/deployment/technical-deployment/testing-instructions) |
+| [Norway · NOR](no/README.md) | Post and dialogue | Altinn publishes the Correspondence specification and guidance to the service owner.The third-party system operates within delegated authority. | [Specification](https://docs.altinn.studio/en/api/correspondence/spec/) · [Management of the service owner](https://docs.altinn.studio/en/correspondence/getting-started/developer-guides/serviceowner/) |
+| Denmark · DNK | Government mailbox | Digital Post documents the technical integration and connection procedure of an individual browsing client. | [Digital Post Guidelines](https://digst.dk/it-loesninger/digital-post/vejledninger/) · [Customer connection](https://digst.dk/it-loesninger/digital-post/bliv-visningsklient/) |
+| France · FRA | Dossier of statements | Démarche Numérique publishes a GraphQL API for reading and modifying dossiers on issued credentials. | [GraphQL API](https://www.data.gouv.fr/dataservices/api-demarche-numerique-graphql) |
+| [Poland · POL](pl/README.md) | Legal correspondence | e-Doręczenia publishes interface specifications and materials for integration with workflow. When connected, compare supported versions of the API. | [Interfaces](https://www.gov.pl/web/e-doreczenia/interfejsy-api) · [Integration with EZD](https://www.gov.pl/web/e-doreczenia/integracja-uslugi-e-doreczen-z-systemami-klasy-ezd) |
+| [United Kingdom of Great Britain and Northern Ireland · GBR](gb/README.md) | Sending notices | GOV.UK Notify documents APIs, testing, and delivery statuses, with delivery status different from departmental application status. | [Documentation.](https://www.notifications.service.gov.uk/using-notify/api-documentation) · [Trial mode](https://www.notifications.service.gov.uk/using-notify/trial-mode) |
+| [Republic of Moldova · MDA](md/README.md) | Notifications | MNotify publishes the connection process and integration examples, and rights to a particular incoming stream require verification. | [Connection.](https://egov-moldova.github.io/egov4dev/en/guides/mnotify/integration-development/) · [Examples of API](https://egov-moldova.github.io/egov4dev/guides/mnotify/examples/) |
+| Portugal · PRT | Communications and exchange | Portugal documents joining the state messaging platform and the general layer of interoperability, and the entitlement of the particular recipient needs to be clarified separately. | [Accession](https://guias.mosaico.gov.pt/plataformas-comuns-da-administracao-publica/plataforma-de-mensagens-gap/qual-o-processo-de-adesao) · [Interoperability](https://digital.gov.pt/pt/interoperabilidade) |
+| Netherlands · NLD | The State Post Office and Tax Exchange | Logius documents Berichtenbox, and the IRS connects to Standard Business Reporting, which are separate channels with their own terms. | [Berichtenbox](https://www.logius.nl/onze-dienstverlening/interactie/voorzieningen/mijnoverheid/mijnoverheid-berichtenbox) · [SBR connection](https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/intermediairs/aangifte_doen/standard_business_reporting/aansluiten_op_sbr_wat_moet_u_doen/) |
+| United States of America · USA | Identification and notification | Login.gov documents test and production clearance. GSA publishes the Notifications API source code. | [Login.gov TEST](https://developers.login.gov/testing/) · [Login.gov PROD](https://developers.login.gov/production/) · [GSA Notifications API](https://github.com/GSA/notifications-api) |
+| Canada · CAN | Sending notices | GC Notify publishes the API for sending and limiting test keys. Delivery status characterizes the message. | [Sending.](https://documentation.notification.canada.ca/en/send.html) · [Keys.](https://documentation.notification.canada.ca/en/keys.html) |
+| Brazil · BRA | Service Catalogue and Tax Mail | The Conecta Catalogue, the Service Catalog API and the industry-specific Serpro Caixa Postal are documented separately. | [API service catalogue](https://www.gov.br/conecta/catalogo/apis/api-de-servicos/) · [Caixa Postal](https://apicenter.estaleiro.serpro.gov.br/documentacao/api-integra-contador/pt/solucoes/integra-caixapostal/caixapostal/) |
+| Mexico · MEX | Identification | Federal Llave MX rules describe the integration of government systems, and access to other people’s files or notification streams requires separate confirmation. | [Llave MX Rules](https://sidof.segob.gob.mx/notas/docFuente/5748515) · [Expediente MX](https://www.expedientemx.gob.mx/) |
+| Uruguay · URY | Notification and exchange | AGESIC documents PDI and SON. A pilot needs a departmental partner, a customer role, and a description of a particular flow. | [PDI](https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/que-es-la-plataforma-de-interoperabilidad) · [SON](https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/politicas-y-gestion/programas/son-notificaciones-comunicaciones-digitales) |
+| Peru · PER | Departmental document management | The government publishes PIDE and guidance on interagency integration of document management systems. | [PIDE](https://www.gob.pe/institucion/pcm/pages/741-plataforma-nacional-de-interoperabilidad) · [Integration of SGD](https://www.gob.pe/63786-el-sistema-de-gestion-documental-sgd-interconectar-el-sgd-con-aplicativos-de-gestion-documental-de-otras-entidades) |
+| Kenya · KEN | Industry API | KRA documents eTIMS system integration and third-party integrators certification. eCitizen status verification is available as a separate user process. | [eTIMS System-to-System](https://www.kra.go.ke/business/etims-electronic-tax-invoice-management-system/learn-about-etims/etims-system-to-system-integration) · [Status of eCitizen](https://support.ecitizen.go.ke/track) |
+| Rwanda · RWA | Industry payments | Irembo describes IremboPay. The admission of third-party IP to IremboGov's claims and statuses has not yet been confirmed. | [IremboPay](https://irembo.com/irembopay/) |
+| Belgium · BEL | Social and public postal services | The operator publishes a social security API directory and a support channel for eBox partners, and the powers to read the box are specified separately. | [API directory](https://apiportal.socialsecurity.be/apis) · [Support for eBox](https://apps.digital.belgium.be/forms/show/bosa/support-ebox-partners) |
+| Ukraine · UKR | Documents and exchanges | Diia publishes integration capabilities, and Trembita documents the connection of systems. Each API requires separate bases and rights. | [Diia Integration](https://integration.diia.gov.ua/en/home.html) · [Trembita](https://trembita.gov.ua/en/integration) |
+| Thailand · THA | State exchange | The DGA documents the Government Data Exchange, and the agency’s application status and private IP rights must be verified separately. | [GDX](https://www.dga.or.th/en/our-services/digital-platform-services/gdx/) |
+
+## Regional tables
+
+GTMI notes a transaction portal for 117 UN states, a bus for 99, both features for 86. Nicaragua does not have a GTMI 2025 score. VUCEN industry portal is separately confirmed.
+
+### East Asia and the Pacific
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Australia | AUS | Transactional · <https://my.gov.au/> | Operational · [Australian Government Architecture](https://architecture.digital.gov.au/secure-data-exchange) | Available | GTMI indicators only |
+| Brunei Darussalam | BRN | Informational · <https://www.egnc.gov.bn/Pages/e-darussalam.aspx> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Cambodia | KHM | Informational · <https://apps.apple.com/us/app/cambodia-public-services/id1168922309> | Operational · [CamDX](https://camdx.gov.kh/) | Planned | GTMI indicators only |
+| China | CHN | Transactional · <https://english.www.gov.cn/news/topnews/202101/06/content_WS5ff54e10c6d0f7257694357d.html> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Fiji | FJI | Transactional · <https://mobile.digital.gov.fj/> | Operational · [Data Exchange Platform](https://fdxp-directory-intranet.digital.gov.fj/) | Absent or unknown | GTMI indicators only |
+| Indonesia | IDN | Transactional · <https://layanan.komdigi.go.id/> | Operational · [Sistem Penghubung Layanan Pemerintah (SPLP)](https://www.komdigi.go.id/transformasi-digital/pemerintahan-digital) | Available | GTMI indicators only |
+| Japan | JPN | Transactional · <https://myna.go.jp/> | Operational · [Standard specifications for common functions of mission-critical systems](https://www.digital.go.jp/policies/local_governments/common-feature-specification) | Available | [Reference available](#apis-and-access) |
+| Kiribati | KIR | Informational · <https://www.kiribati.gov.ki> | Planned · [Government Service Bus (GSB)](https://documents1.worldbank.org/curated/en/852781653593751829/pdf/Kiribati-Digital-Government-Project.pdf) | Planned | GTMI indicators only |
+| Democratic People’s Republic of Korea | PRK | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Republic of Korea | KOR | Transactional · <https://www.gov.kr> | Operational · [Public Information Sharing System](https://share.go.kr/main_www_2018.jsp) | Available | [Reference available](#apis-and-access) |
+| Lao People’s Democratic Republic | LAO | Informational · <https://laoportal.gov.la/dgc/backend/web/> | Absent in GTMI | Planned | GTMI indicators only |
+| Malaysia | MYS | Transactional · <https://www.malaysia.gov.my/portal/digitalservices> | Operational · [Malaysian Government Data Exchange (MyGDX)](https://www.mygdx.gov.my/en/landing-page/theme) | Available | [Reference available](#apis-and-access) |
+| Marshall Islands | MHL | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Micronesia (Federated States of) | FSM | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Mongolia | MNG | Transactional · <https://e-mongolia.mn/home> | Operational · [State Information Exchange System](https://datacenter.gov.mn/#) | Available | GTMI indicators only |
+| Myanmar | MMR | Informational · <https://myanmar.gov.mm/e-government-service> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Nauru | NRU | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| New Zealand | NZL | Informational · <https://www.govt.nz/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Palau | PLW | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Papua New Guinea | PNG | Transactional · <https://www.sevis.gov.pg/> | Operational · [Sevis Data Exchange Platform (SevisDEx)](https://www.ict.gov.pg/89962/#:~:text=SevisPass%20%28Digital%20ID%29:%20A,before%20Independence%20Day%20next%20month.) | Planned | GTMI indicators only |
+| Philippines | PHL | Transactional · <https://e.gov.ph/> | Operational · [eGovDX](https://core.e.gov.ph/) | Available | GTMI indicators only |
+| Samoa | WSM | Informational · <https://mygov.gov.ws/services/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Singapore | SGP | Transactional · <https://www.life.gov.sg> | Operational · [API Exchange (APEX) and Asynchronous Data Exchange (ADEX)](https://www.developer.tech.gov.sg/products/categories/data-and-apis/apex-cloud/overview) | Available | [Reference available](#apis-and-access) |
+| Solomon Islands | SLB | Informational · <https://solomons.gov.sb/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Thailand | THA | Transactional · <https://xn--72cst3czdd.com/> | Operational · [Government Data Exchange](http://gdx.dga.or.th) | Available | [Reference available](#apis-and-access) |
+| Timor-Leste | TLS | Informational · <https://balkaununiku.gov.tl> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Tonga | TON | Informational · <https://www.gov.to/services/> | Absent in GTMI | Available | GTMI indicators only |
+| Tuvalu | TUV | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Vanuatu | VUT | Informational · <https://gov.vu/> | Planned · [GSBVU](https://www.gov.vu/index.php/resources/vanuatu-digital-transformation-masterplan) | Planned | GTMI indicators only |
+| Viet Nam | VNM | Transactional · <https://dichvucong.gov.vn/p/home/dvc-trang-chu.html> | Operational · [National Public Online Services](https://dichvucong.gov.vn) | Available | GTMI indicators only |
+
+### Europe and Central Asia
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Albania | ALB | Transactional · <https://e-albania.al/> | Operational · [Government Interoperability Platform (Government Gateway)](https://e-albania.al/) | Available | GTMI indicators only |
+| Andorra | AND | Transactional · <https://www.e-tramits.ad/> | Absent in GTMI | Planned | GTMI indicators only |
+| Armenia | ARM | Informational · <https://hartak.am/> | Planned · [Government Interoperability Platform (to become X-Road equivalent following public data act approval)](https://isaa.am/en/%D5%B0%D5%A1%D5%B5%D5%A1%D5%BD%D5%BF%D5%A1%D5%B6%D5%AB-%D5%A1%D5%A6%D5%A3%D5%A1%D5%B5%D5%AB%D5%B6-%D6%83%D5%B8%D5%AD%D5%A3%D5%B8%D6%80%D5%AE%D5%A5%D5%AC%D5%AB%D5%B8%D6%82%D5%A9%D5%B5%D5%A1%D5%B6-%D5%B0%D5%A1%D6%80%D5%A9%D5%A1%D5%AF) | Available | GTMI indicators only |
+| Austria | AUT | Transactional · <https://www.oesterreich.gv.at/de> | Operational · [Digital Austria Data Exchange](https://www.digitalaustria.gv.at/verwaltung/egovernment/dadex.html) | Available | GTMI indicators only |
+| Azerbaijan | AZE | Transactional · <https://my.gov.az/> | Operational · [Digital Bridge](https://www.youtube.com/watch?v=pf_lMUJZB4c) | Available | GTMI indicators only |
+| Belarus | BLR | Transactional · <https://e-pasluga.by/home.html> | Operational · [Nationwide Automated Information System (NAIS)](https://www.facebook.com/ncesby/?locale=ru_RU) | Planned | GTMI indicators only |
+| Belgium | BEL | Transactional · <https://my.belgium.be/nl> | Operational · [Federal Service Platform](https://bosa.belgium.be/nl/services/federale-dienstenintegrator) | Available | [Reference available](#apis-and-access) |
+| Bosnia and Herzegovina | BIH | Absent in GTMI | Absent in GTMI | Available | GTMI indicators only |
+| Bulgaria | BGR | Transactional · <http://www.egov.bg> | Operational · [Interoperability Layer for Services and Data](https://unifiedmodel.egov.bg/wps/portal/unified-model/for-administrations/integration-procedures) | Available | GTMI indicators only |
+| Croatia | HRV | Transactional · <https://gov.hr/> | Operational · [Government Service Bus](https://mpudt.gov.hr/interoperabilnost-sustava-javne-uprave-drzavna-sabirnica-gsb/29044) | Available | GTMI indicators only |
+| Cyprus | CYP | Transactional · <https://www.gov.cy/> | Operational · [CY Connect](https://dsf.dmrid.gov.cy/2024/10/08/connecting-digital-services/#:~:text=CY%20Login%20documentation-,CY%20Sign,CY%20Notify) | Available | GTMI indicators only |
+| Czech Republic | CZE | Transactional · <https://gov.cz/> | Operational · [Informační systém sdílené služby (Shared services IS)](https://pruvodcepripojenim.gov.cz/) | Available | [Reference available](#apis-and-access) |
+| Denmark | DNK | Transactional · <https://virk.dk/> | Operational · [Datafordeleren](https://datafordeler.dk/) | Available | [Reference available](#apis-and-access) |
+| Estonia | EST | Transactional · <https://www.eesti.ee/eng> | Operational · [X-Road + UXP](https://x-tee.ee/home) | Available | GTMI indicators only |
+| Finland | FIN | Transactional · <https://www.suomi.fi/etusivu> | Operational · [Palveluväylä (X-road)](https://dvv.fi/en/data-exchange-layer) | Available | [Reference available](#apis-and-access) |
+| France | FRA | Transactional · <https://www.service-public.fr/> | Operational · [France Connect](https://franceconnect.gouv.fr/) | Available | [Reference available](#apis-and-access) |
+| Georgia | GEO | Transactional · <https://www.my.gov.ge> | Operational · [Data Exchange Infrastructure - Georgian Governmental Gateway (G3)](https://openknowledge.worldbank.org/bitstream/handle/10986/35851/South-Caucasus-GovTech-for-Georgia-A-Whole-of-Government-Approach-as-a-Key-Foundation-for-the-Digital-Economy.pdf?sequence=1&isAllowed=y) | Planned | GTMI indicators only |
+| Germany | DEU | Transactional · <http://www.bund.de> | Operational · [xdoema Digital Doc Exchange](https://www.it-planungsrat.de/produkte-standards/produkte) | Planned | [Reference available](#apis-and-access) |
+| Greece | GRC | Transactional · <http://www.gov.gr> | Operational · [Web Services Management and Support Platform (web services) Enterprise Service Bus (ESB) - (Interoperability Centre-KED)](https://www.gsis.gr/en/public-administration/ked/ESB) | Available | GTMI indicators only |
+| Hungary | HUN | Transactional · <https://magyarorszag.hu> | Operational · [Central Government Service Bus](https://gw.kkszb.gov.hu) | Available | GTMI indicators only |
+| Iceland | ISL | Transactional · <https://island.is/> | Operational · [Government X-Road (Straumurinn)](https://island.is/en/o/digital-iceland/straumurinn-x-road) | Available | GTMI indicators only |
+| Ireland | IRL | Transactional · <https://www.mygovid.ie/> | Operational · [Information Mediator](https://www.gov.ie/en/govie-team/publications/information-mediator/) | Available | GTMI indicators only |
+| Italy | ITA | Transactional · <https://io.italia.it/> | Operational · [Public Connectivity System](https://docs.italia.it/italia/piano-triennale-ict/pianotriennale-ict-doc/it/2024-2026-agg-2025/capitolo-6_infrastrutture/il-sistema-pubblico-di-connettivit%C3%A0.html) | Available | GTMI indicators only |
+| Kazakhstan | KAZ | Transactional · <https://egov.kz/cms/en> | Operational · [Smart Bridge](https://sb.egov.kz/) | Available | [Reference available](#apis-and-access) |
+| Kyrgyzstan | KGZ | Transactional · <https://portal.tunduk.kg/> | Operational · [TUNDUK (X-Road)](https://tunduk.gov.kg/en/pages/2-information-systems#C2) | Available | [Reference available](#apis-and-access) |
+| Latvia | LVA | Transactional · <https://latvija.gov.lv/> | Operational · [WSO2 API Manager](https://viss.gov.lv/lv/Informacijai/Dokumentacija/Koplietosanas_komponentes/API_Parvaldnieks) | Available | GTMI indicators only |
+| Liechtenstein | LIE | Transactional · <https://www.llv.li/de?servicefinder=open> | Operational · [OSB](https://techdocs.broadcom.com/us/en/ca-enterprise-software/layer7-api-management/api-gateway/) | Available | GTMI indicators only |
+| Lithuania | LTU | Transactional · <https://www.epaslaugos.lt/portal/login> | Operational · [State Information Recourses Interoperability Platform](https://www.epaslaugos.lt/portal/login) | Available | GTMI indicators only |
+| Luxembourg | LUX | Transactional · <https://guichet.public.lu/en.html> | Operational · Guichet | Available | GTMI indicators only |
+| Republic of Moldova | MDA | Transactional · <https://servicii.gov.md/> | Operational · [MConnect](https://mconnect.gov.md/#/) | Available | [Reference available](#apis-and-access) |
+| Monaco | MCO | Transactional · <https://monguichet.mc/auth/realms/gichuni/protocol/openid-connect/auth?client_id=gichuni-frontserver&redirect_uri=https%3A%2F%2Fmonguichet.mc%2Flogin%3Fkc_locale%3Dfr&state=75dee092-b94b-4aa1-8a0c-66f939ce1513&response_mode=fragment&response_type=code&scope=openid%20profile%20email%20monguichet%20address&nonce=3a2106b3-f151-4646-9c1e-79a8a36f1527&ui_locales=fr> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Montenegro | MNE | Transactional · <https://www.euprava.me/> | Operational · [Unique System for Electronic Data Exchage](https://www.gov.me/dokumenta/569829ea-ebc0-4f11-8a94-68e79766a951) | Available | GTMI indicators only |
+| Netherlands | NLD | Informational · <https://www.overheid.nl> | Operational · [Digipoort](https://www.logius.nl/diensten/digipoort) | Available | [Reference available](#apis-and-access) |
+| North Macedonia | MKD | Transactional · <https://uslugi.gov.mk> | Operational · [National Interoperability Platform](https://mdt.gov.mk/en-GB/klucni-aktivnosti/nacionalna-platforma-za-interoperabilonost) | Available | GTMI indicators only |
+| Norway | NOR | Transactional · <http://www.norge.no> | Operational · [Infrastructure for interaction](https://www.difi.no/fagomrader-og-tjenester/digitalisering-og-samordning/nasjonal-arkitektur/arkitekturrammeverk-samhandling) | Available | [Reference available](#apis-and-access) |
+| Poland | POL | Transactional · <https://epuap.gov.pl/wps/portal/E2_ZdarzeniaZyciowe> | Absent in GTMI | Available | [Reference available](#apis-and-access) |
+| Portugal | PRT | Transactional · <https://www.gov.pt/> | Operational · [iAP (interoperability in Public Administration)](https://www.iap.gov.pt/) | Available | [Reference available](#apis-and-access) |
+| Romania | ROU | Transactional · <https://www.e-guvernare.ro/> | Planned · [PNI](https://www.adr.gov.ro/proiect-platforma-nationala-de-interoperabilitate-pni-cod-mysmis-333977/) | Available | GTMI indicators only |
+| Russian Federation | RUS | Transactional · <https://www.gosuslugi.ru/> | Operational · [SMEV - System of Interagency Electronic Interaction](https://info.gosuslugi.ru/new/smev) | Available | [Reference available](#apis-and-access) |
+| San Marino | SMR | Informational · <https://www.gov.sm/pub1/GovSM/Servizi-online-Pubblica-Amministrazione.html> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Serbia | SRB | Transactional · <https://euprava.gov.rs/> | Operational · [Government Service Bus and Ineroperability platform](https://euprava.gov.rs/usluge/5224) | Available | GTMI indicators only |
+| Slovakia | SVK | Transactional · <https://www.slovensko.sk/sk/najst-sluzbu> | Operational · [IS Central Data Integration Platform (historically IS CSRÚ or CIP)](https://mirri.gov.sk/sekcie/informatizacia/o-sekciach/centralna-datova-kancelaria/datovy-program/#:~:text=Postupy%20zad%C3%A1vania%20integra%C4%8Dnej%20po%C5%BEiadavky%20na%20integr%C3%A1ciu%20IS,alebo%20in%C3%BD%20opr%C3%A1vnen%C3%BD%20subjekt%29%20z%C3%A1ujem%20o:%20I.) | Available | GTMI indicators only |
+| Slovenia | SVN | Transactional · <https://e-uprava.gov.si/> | Operational · [Pladenj / Tray](https://nio.gov.si/en/products/interoperabilnostna%2Bkomponenta%2Bpladenj-288) | Available | GTMI indicators only |
+| Spain | ESP | Informational · <https://administracion.gob.es/> | Operational · [Plataforma de intermediación de datos](https://administracionelectronica.gob.es/pae_Home/pae_Estrategias/Racionaliza_y_Comparte/elementos_comunes/Intermediacion_de_datos.html) | Available | GTMI indicators only |
+| Sweden | SWE | Transactional · <https://www.verksamt.se> | Operational · [Single Digital Gateway + Interoperability Framework](https://www.digg.se/styrning-och-samordning/sdg---en-gemensam-digital-ingang-till-europa) | Available | GTMI indicators only |
+| Switzerland | CHE | Transactional · <https://www.ch.ch> | Operational · [I14Y interoperability platform](https://www.i14y.admin.ch/en/home) | Available | GTMI indicators only |
+| Tajikistan | TJK | Informational · <https://khizmat.ehukumat.tj> | Planned · [Interoperability Platform (Smart Bridge as an interim solution)](https://documents1.worldbank.org/curated/en/099112624105540626/pdf/BOSIB-dab4dbfd-c863-4a45-9708-815e69871977.pdf) | Absent or unknown | GTMI indicators only |
+| Turkmenistan | TKM | Absent in GTMI | Operational · [X-Road Electronic Data Exchange System](https://tmgeology.gov.tm/en/news/701) | Absent or unknown | GTMI indicators only |
+| Türkiye | TUR | Transactional · <https://www.turkiye.gov.tr/> | Operational · [Government Service Bus part of e‐Government Gateway is "Public Application Center" which is a platform where public institutions can share data, provide services to other institutions and access statistical information about their services. (Kamunet is used for inter institutional communication as a closed-circuit VPN system in network layer.)](https://kamu.turkiye.gov.tr/) | Available | GTMI indicators only |
+| Ukraine | UKR | Transactional · <https://diia.gov.ua/> | Operational · [Trembita National Interoperability System (based on X-Road)](https://trembita.gov.ua/en) | Available | [Reference available](#apis-and-access) |
+| United Kingdom of Great Britain and Northern Ireland | GBR | Transactional · <https://www.gov.uk/> | Absent in GTMI | Available | [Reference available](#apis-and-access) |
+| Uzbekistan | UZB | Transactional · <https://my.gov.uz/en> | Operational · [Interdepartmental Integration Platform of “Electronic Government”](https://dgov.uz/en/solution-detail/16/) | Available | [Reference available](#apis-and-access) |
+
+### Latin America and the Caribbean
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Antigua and Barbuda | ATG | Informational · <https://ab.gov.ag/detail_page.php?page=30> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Argentina | ARG | Transactional · <https://tramitesadistancia.gob.ar/#/inicio> | Operational · [Interoperar](https://www.argentina.gob.ar/interoperar) | Available | GTMI indicators only |
+| Bahamas | BHS | Transactional · <https://mygateway.gov.bs/> | Absent in GTMI | Available | GTMI indicators only |
+| Barbados | BRB | Informational · <https://www.gov.bb/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Belize | BLZ | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Bolivia (Plurinational State of) | BOL | Informational · <https://www.gob.bo/> | Operational · [Interoperability Platform](https://agetic.gob.bo/tramites-y-servicios/herramientas-y-servicios-digitales/plataforma-de-interoperabilidad-del-estado) | Available | GTMI indicators only |
+| Brazil | BRA | Transactional · <https://www.gov.br/pt-br> | Operational · [Conecta GOVBR](https://www.gov.br/governodigital/pt-br/infraestrutura-nacional-de-dados/interoperabilidade/conecta-gov.br) | Available | [Reference available](#apis-and-access) |
+| Chile | CHL | Transactional · <https://www.chileatiende.gob.cl/> | Operational · [PISEE - Plataforma Integrada de Servicios Electrónicos del Estado](https://portal.pisee.cl/) | Available | GTMI indicators only |
+| Colombia | COL | Transactional · <https://www.gov.co/> | Operational · [X-Road](https://mintic.gov.co/portal/inicio/Sala-de-prensa/Noticias/103106:Inicia-implementacion-de-plataforma-digital-que-facilita-el-intercambio-de-informacion-en-el-Estado#:~:text=Es%20de%20recordar%20que%20hace,optimizar%20la%20labor%20del%20Estado.) | Available | GTMI indicators only |
+| Costa Rica | CRI | Transactional · <https://puravidadigital.gob.go.cr/> | Planned · [X-Road](https://www.justdigi.ee/sites/default/files/documents/2025-07/Costa%20Rica.pdf#:~:text=digital%20government%20and%20society%20development%2C%20work%20jointly,%28including%20especially%20X%2DRoad'%20based%20data.%20exchange%20platform%29;) | Planned | GTMI indicators only |
+| Cuba | CUB | Transactional · <https://www.mincom.gob.cu/es/gobierno-electronico> | Absent in GTMI | Planned | GTMI indicators only |
+| Dominica | DMA | Informational · <https://eservices.gov.dm> | Planned · [Government Service Bus](https://documents1.worldbank.org/curated/en/848701593136915061/pdf/Dominica-Grenada-St-Lucia-St-Vincent-and-the-Grenadines-and-the-Organization-of-Eastern-Caribbean-States-Caribbean-Digital-Transformation-Project-Digital-Caribbean.pdf) | Planned | GTMI indicators only |
+| Dominican Republic | DOM | Transactional · <https://www.gob.do/> | Operational · [X-Road](https://developer.digital.gob.do/) | Available | GTMI indicators only |
+| Ecuador | ECU | Transactional · <https://www.gob.ec/> | Operational · [Government Services Bus (Bus de Servicios Gubernamentales)](https://www.gobiernoelectronico.gob.ec/bus-de-servicios-gubernamentales/) | Available | GTMI indicators only |
+| El Salvador | SLV | Transactional · <http://simple.sv> | Operational · [Tenoli / X-Road](https://x-road.global/xroad-case-studies-library/2024/10/21/first-steps-towards-interoperability-in-the-public-sector-of-el-salvador#:~:text=The%20solution,business%20registration%2C%E2%80%9D%20Ram%C3%ADrez%20explains.) | Absent or unknown | GTMI indicators only |
+| Grenada | GRD | Informational · <https://my.gov.gd/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Guatemala | GTM | Transactional · <https://www.tramites.gob.gt/> | Absent in GTMI | Planned | GTMI indicators only |
+| Guyana | GUY | Informational · <https://portal.gov.gy/services> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Haiti | HTI | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Honduras | HND | Transactional · <https://portalunico.iaip.gob.hn/#/homeLanding> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Jamaica | JAM | Informational · <https://www.gov.jm/> | Planned · [Jamaica Data Exchange Platform](https://jis.gov.jm/digital-transformation-being-advanced/#:~:text=Jamaica's%20government%20is%20committed%20to%20transforming%20the,Response%20Plan%20in%20recognition%20of%20growing%20cyberthreats.) | Absent or unknown | GTMI indicators only |
+| Mexico | MEX | Transactional · <https://www.gob.mx/> | Operational · [Bus de Servicio](http://hub.servicios.gob.mx/) | Absent or unknown | [Reference available](#apis-and-access) |
+| Nicaragua | NIC | No data · [VUCEN, foreign trade](https://web.vucen.gob.ni/que-es-vucen/) | No data | No data | GTMI indicators only |
+| Panama | PAN | Transactional · <https://panamaconecta.gob.pa/> | Operational · [Bus Interinstitucional](https://dci.aig.gob.pa/departamentos-areas/analitica-de-datos/interoperabilidad/) | Absent or unknown | GTMI indicators only |
+| Paraguay | PRY | Transactional · <https://www.paraguay.gov.py/> | Operational · [Information Exchange System](https://mitic.gov.py/sistema-de-intercambio-de-informacion/) | Available | GTMI indicators only |
+| Peru | PER | Transactional · <https://www.gob.pe/> | Operational · [National Platform for State Interoperability. Likewise, within the framework of the working document of the Digital Transformation National Policy (PNTD), a guideline to deploy the government strategy is to share tools, digital services and open data between public and private organizations which contemplates developing interoperability models in collaboration with the entire Peruvian digital ecosystem. This will allow the generation of new digital services models and foster the users confidence regarding the process of their personal data.](https://www.gob.pe/741-plataforma-de-interoperabilidad-del-estado) | Available | [Reference available](#apis-and-access) |
+| Saint Kitts and Nevis | KNA | Informational · <https://www.gov.kn/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Saint Lucia | LCA | Transactional · <https://digigov.govt.lc> | Operational · [DigiGov Platform](https://www.digigov.govt.lc/) | Absent or unknown | GTMI indicators only |
+| Saint Vincent and the Grenadines | VCT | Informational · <https://www.gov.vc/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Suriname | SUR | Informational · <https://gov.sr/e-services/> | Planned · [eGov Implementation Plan of Suriname (Oct 2020)](https://gov.sr/wp-content/uploads/2022/12/Roadmap-e-Gov-version-0.2-09-10-2020.pdf) | Planned | GTMI indicators only |
+| Trinidad and Tobago | TTO | Transactional · <https://www.ttconnect.gov.tt/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Uruguay | URY | Transactional · <https://www.gub.uy/tramites/> | Operational · [Integration Platform (PDI)](https://www.gub.uy/agencia-gobierno-electronico-sociedad-informacion-conocimiento/que-es-la-plataforma-de-interoperabilidad) | Available | [Reference available](#apis-and-access) |
+| Venezuela, Bolivarian Republic of | VEN | Transactional · <https://patria.org.ve/> | Absent in GTMI | Available | GTMI indicators only |
+
+### Middle East and North Africa
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Algeria | DZA | Transactional · <https://www.mf.gov.dz/index.php/fr/e-service> | Absent in GTMI | Planned | GTMI indicators only |
+| Bahrain | BHR | Transactional · <https://services.bahrain.bh/wps/portal/en/BSP/HomeeServicesPortal/> | Operational · [National Gateway Infrastructure](https://www.bahrain.bh/wps/portal/!ut/p/a0/hY5BDoIwFESv0g3rXyASXBJjNGxINEbshjT1BwrlF9pKPL7VC7iczHuTAQEtCJKb7mXQlqT5ZlF054YXaVZmdZnfcl41xeGyP_L0xHdwRYL6H9TCQ4_rKioQylLAd4AWe7st1gVpOqSED3bGhK8vrSZmNE0-4Qotm9F72ccmDMjQoArOklYsyuhoRgpM0pPpONq732m2ODtGzsMyne4fhs_qxw!!/) | Available | GTMI indicators only |
+| Djibouti | DJI | Transactional · <https://www.egouv.dj/Welcome/index/2> | Absent in GTMI | Planned | GTMI indicators only |
+| Egypt | EGY | Transactional · <https://digital.gov.eg/> | Operational · [G2G - G2C - G2B](https://mcit.gov.eg/en/Media_Center/Press_Room/Press_Releases/66643) | Planned | GTMI indicators only |
+| Iran (Islamic Republic of) | IRN | Transactional · <https://iran.gov.ir/> | Operational · [Government Service Bus](https://iran.gov.ir/gsb) | Available | GTMI indicators only |
+| Iraq | IRQ | Transactional · <https://ur.gov.iq/> | Planned · [UR bus](https://urapi.cloud.egov.iq/) | Available | GTMI indicators only |
+| Israel | ISR | Transactional · <https://www.gov.il/he/departments/faq/signup_sso_faq> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Jordan | JOR | Transactional · <https://sanad.jo/Default/En> | Operational · [Government Service Bus (GSB)](https://portal-www.g2b.gsb.gov.jo/porg-gsb/g2b-catalog/) | Available | GTMI indicators only |
+| Kuwait | KWT | Transactional · <https://e.gov.kw/> | Operational · [Kuwait Integration Hub - Apigee](https://developer.api-non-prod.cait.gov.kw/home?language_content_entity=en) | Available | GTMI indicators only |
+| Lebanon | LBN | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Libya | LBY | Informational · <https://www.cim.gov.ly/electronic-services> | Planned · [Data Exchange and Flow Services](https://www.gia.gov.ly/en/national-distributor-and-control/) | Planned | GTMI indicators only |
+| Malta | MLT | Transactional · <https://www.servizz.gov.mt/en/Pages/default.aspx> | Operational · [Interoperability Platform](https://mita.gov.mt/wp-content/uploads/2025/08/NationalInteroperabilityFramework_2-1.pdf) | Available | GTMI indicators only |
+| Morocco | MAR | Informational · <https://www.maroc.ma/en/digital-services/general-public> | Operational · [GISRE - e Gateway Gouvernementale / e-Government Interoperability Platform](https://telquel.ma/sponsors/gisre-quand-les-administrations-se-parlent-le-citoyen-respire_1926575) | Planned | GTMI indicators only |
+| Oman | OMN | Transactional · <https://gov.om/> | Operational · [National Government Integration Platform (NGIP)](https://www.mtcit.gov.om/ITAPortal/Pages/Page.aspx?NID=2125&PID=7643) | Available | GTMI indicators only |
+| Qatar | QAT | Transactional · <https://hukoomi.gov.qa/en/#> | Operational · [Government Data Exchange (GDX)](https://www.mcit.gov.qa/en/services/government-data-exchange-system/) | Available | GTMI indicators only |
+| Saudi Arabia | SAU | Transactional · <https://www.my.gov.sa> | Operational · [Government Service Bus (GSB)](https://sdaia.gov.sa/en/Services/Pages/GSB.aspx) | Available | [Reference available](#apis-and-access) |
+| Syrian Arab Republic | SYR | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Tunisia | TUN | Informational · <http://www.tunisie.gov.tn/> | Operational · [UXP/WSO2](https://interop.tunisia.gov.tn/accueil) | Available | GTMI indicators only |
+| United Arab Emirates | ARE | Transactional · <https://u.ae/en/Services-Directory> | Operational · [Government Service Bus](https://tdra.gov.ae/en/Services/government-service-bus-gsb) | Available | [Reference available](#apis-and-access) |
+| Yemen | YEM | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+
+### North America
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Canada | CAN | Transactional · <https://www.canada.ca/en/government/sign-in-online-account.html> | Operational · [GC Service Bus, operated by the GCinterop program at Public Services and Procurement Canada (PSPC)](https://www.canada.ca/en/public-services-procurement.html) | Available | [Reference available](#apis-and-access) |
+| United States of America | USA | Transactional · <https://www.usa.gov/> | Operational · [Max.Gov](https://portal.max.gov/portal/home) | Available | [Reference available](#apis-and-access) |
+
+### South Asia
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Afghanistan | AFG | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Bangladesh | BGD | Transactional · <https://www.mygov.bd/> | Operational · [BNDA Service bus](https://bnda.gov.bd/) | Available | GTMI indicators only |
+| Bhutan | BTN | Transactional · <https://www.citizenservices.gov.bt/> | Operational · [Government Data Exchange Platform](https://tech.gov.bt/dataexchange) | Available | GTMI indicators only |
+| India | IND | Transactional · <https://web.umang.gov.in/landing/> | Operational · [UMANG](http://www.umang.gov.in/) | Available | [Reference available](#apis-and-access) |
+| Maldives | MDV | Transactional · <https://one.gov.mv/> | Planned · [Government Technology Stack](https://digital.gov.mv/) | Absent or unknown | GTMI indicators only |
+| Nepal | NPL | Informational · <https://nagarikapp.gov.np/> | Absent in GTMI | Available | GTMI indicators only |
+| Pakistan | PAK | Transactional · <https://ictadministration.gov.pk/official-mobile-phone-app/> | Planned · [National Data Exchange Layer](https://projects.worldbank.org/en/projects-operations/project-detail/P174402) | Planned | GTMI indicators only |
+| Sri Lanka | LKA | Informational · <https://www.gov.lk/government/eservices> | Planned · [National Data Exchange (NDX)](https://www.citralab.lk/work/developing-sri-lankas-national-data-exchange-ndx) | Available | GTMI indicators only |
+
+### Sub-Saharan Africa
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Angola | AGO | Transactional · <https://www.sepe.gov.ao/> | Operational · [API.GOV.AO WSO2](https://servicos.api.gov.ao/) | Available | GTMI indicators only |
+| Benin | BEN | Transactional · <https://service-public.bj/public/services/e-services> | Operational · [X-Road BJ](https://xroad.bj/) | Available | GTMI indicators only |
+| Botswana | BWA | Transactional · <https://www.1gov.gov.bw> | Absent in GTMI | Planned | GTMI indicators only |
+| Burkina Faso | BFA | Informational · <https://www.servicepublic.gov.bf/> | Absent in GTMI | Available | GTMI indicators only |
+| Burundi | BDI | Absent in GTMI | Operational · [Government Service Bus](https://documents.worldbank.org/en/publication/documents-reports/documentdetail/207441655916156350/burundi-digital-foundations-project#:~:text=Burundi%20%2D%20Digital%20Foundations%20Project%20%28English,iii%29%20Local%20access...) | Absent or unknown | GTMI indicators only |
+| Cabo Verde | CPV | Transactional · <https://portondinosilhas.gov.cv/> | Operational · [PDEX (Data Exchange Platform)](https://pdex.gov.cv/) | Planned | GTMI indicators only |
+| Cameroon | CMR | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Central African Republic | CAF | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Chad | TCD | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Comoros | COM | Informational · <https://puc.gouv.km> | Planned · [Plateforme d'intéropérabilité](https://wso2.com/api-manager/) | Absent or unknown | GTMI indicators only |
+| Democratic Republic of the Congo | COD | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Congo | COG | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Côte d’Ivoire | CIV | Informational · <https://www.milie.ci/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Equatorial Guinea | GNQ | Transactional · <https://minhacienda-gob.com/ventanilla-unica/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Eritrea | ERI | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Eswatini | SWZ | Absent in GTMI | Absent in GTMI | Available | GTMI indicators only |
+| Ethiopia | ETH | Transactional · <https://www.eservices.gov.et/> | Absent in GTMI | Available | GTMI indicators only |
+| Gabon | GAB | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Gambia (Republic of The) | GMB | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Ghana | GHA | Transactional · <https://www.ghana.gov.gh> | Absent in GTMI | Available | GTMI indicators only |
+| Guinea | GIN | Transactional · <https://service-public.gov.gn/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Guinea-Bissau | GNB | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Kenya | KEN | Informational · <https://www.ecitizen.go.ke/> | Planned · [Enterprise Service Bus (ESB)](https://cms.icta.go.ke//sites/default/files/2024-07/GEA%20-%20GIF%202nd%20Edition.pdf) | Available | [Reference available](#apis-and-access) |
+| Lesotho | LSO | Informational · <https://www.gov.ls/services/> | Planned · [Xroad - Lesotho](https://gov.ls) | Planned | GTMI indicators only |
+| Liberia | LBR | Informational · <https://www.evisaliberia.com/> | Planned · [Government Service Bus](https://mopt.gov.lr/documents/national-digitalstrategy2025-2029/) | Absent or unknown | GTMI indicators only |
+| Madagascar | MDG | Informational · <https://torolalana.gov.mg/> | Operational · [X-Road](https://digital.gov.mg/2021/07/31/couche-securisee-dinteroperabilite/) | Available | GTMI indicators only |
+| Malawi | MWI | Informational · <https://bomalathu.gov.mw> | Operational · [Bomalathu Platform](https://www.worldbank.org/en/results/2025/06/23/digitalizing-afe-malawi-to-improve-access-to-education-public-services-and-income-opportunities#:~:text=The%20Digital%20Malawi%20Acceleration%20Project,an%20additional%20500%20government%20offices.) | Absent or unknown | GTMI indicators only |
+| Mali | MLI | Informational · <https://demarchesadministratives.gouv.ml> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Mauritania | MRT | Transactional · <https://khidmaty.gov.mr/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Mauritius | MUS | Transactional · <https://govmu.org/EN/Pages/eservices.aspx> | Operational · [InfoHighway](https://ih.govmu.org/) | Available | GTMI indicators only |
+| Mozambique | MOZ | Informational · <https://portaldocontribuinte.at.gov.mz/> | Absent in GTMI | Available | GTMI indicators only |
+| Namibia | NAM | Informational · <https://eservices.mhaiss.gov.na/> | Operational · [NamX](https://cyber.ee/resources/case-studies/namibia-governmental-interoperability-framework-nam-x/) | Absent or unknown | GTMI indicators only |
+| Niger | NER | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Nigeria | NGA | Transactional · <https://services.gov.ng/> | Absent in GTMI | Available | GTMI indicators only |
+| Rwanda | RWA | Transactional · <https://irembo.gov.rw/home/citizen/all_services> | Operational · [Government Enterprise Service Bus(GESB)](https://gesb.prod.risa.gov.rw/) | Absent or unknown | [Reference available](#apis-and-access) |
+| Senegal | SEN | Transactional · <https://senegalservices.sn/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Seychelles | SYC | Transactional · <https://eservice.egov.sc/egateway/homepage.aspx> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Sierra Leone | SLE | Informational · <https://citizens.wan.gov.sl/> | Planned · [Government Service Bus (GSB) based on X-Road](https://www.facebook.com/100064556626924/posts/%F0%9D%90%83%F0%9D%90%A2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%9C%F0%9D%90%AD%F0%9D%90%A8%F0%9D%90%AB%F0%9D%90%9A%F0%9D%90%AD%F0%9D%90%9E-%F0%9D%90%A8%F0%9D%90%9F-%F0%9D%90%85%F0%9D%90%A2%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9C%F0%9D%90%A2%F0%9D%90%9A%F0%9D%90%A5-%F0%9D%90%8C%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A0%F0%9D%90%9E%F0%9D%90%A6%F0%9D%90%9E%F0%9D%90%A7%F0%9D%90%AD-%F0%9D%90%92%F0%9D%90%B2%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%9E%F0%9D%90%A6%F0%9D%90%AC-%F0%9D%90%9A%F0%9D%90%A7%F0%9D%90%9D-%F0%9D%90%93%F0%9D%90%9E%F0%9D%90%9C%F0%9D%90%A1%F0%9D%90%A7%F0%9D%90%A8%F0%9D%90%A5%F0%9D%90%A8%F0%9D%90%A0%F0%9D%90%B2-%F0%9D%90%84%F0%9D%90%A7%F0%9D%90%9D%F0%9D%90%AC-%F0%9D%90%93%F0%9D%90%B0%F0%9D%90%A8-%F0%9D%90%83%F0%9D%90%9A%F0%9D%90%B2-%F0%9D%90%92%F0%9D%90%AD%F0%9D%90%9A%F0%9D%90%A4%F0%9D%90%9E%F0%9D%90%A1%F0%9D%90%A8%F0%9D%90%A5/1146330130862197/) | Planned | GTMI indicators only |
+| Somalia | SOM | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| South Africa | ZAF | Transactional · <https://www.eservices.gov.za/tonkana/services/home.jsf> | Planned · [DGPE - Information Exchange Platform](http://www.sita.co.za/sites/default/files/Strategic%20Plan%202020-2025.pdf) | Available | GTMI indicators only |
+| South Sudan | SSD | Transactional · <https://www.eservices.gov.ss/> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Sudan | SDN | Absent in GTMI | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Sao Tome and Principe | STP | Absent in GTMI | Absent in GTMI | Planned | GTMI indicators only |
+| United Republic of Tanzania | TZA | Informational · <https://huduma.serikali.go.tz/home> | Operational · [Government Enterprise Service Bus (GovESB)](https://govesb.gov.go.tz) | Available | GTMI indicators only |
+| Togo | TGO | Transactional · <https://service-public.gouv.tg/> | Absent in GTMI | Planned | GTMI indicators only |
+| Uganda | UGA | Absent in GTMI | Operational · [Ughub](https://www.nita.go.ug/UgHub) | Available | GTMI indicators only |
+| Zambia | ZMB | Transactional · <https://zamportal.gov.zm> | Operational · [Government Enterprise Service Bus and Unified Payment Gateway](https://zamportal.gov.zm) | Available | GTMI indicators only |
+| Zimbabwe | ZWE | Informational · <https://zimeservices.pfms.gov.zw> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+
+### Additional GTMI positions
+
+| Country or position of GTMI | The GTMI code | Portal according to GTMI | Tire according to GTMI | Framework | Source on access |
+|---|---|---|---|---|---|
+| Hong Kong SAR, China | HKG | Transactional · <https://www.gov.hk/> | Absent in GTMI | Available | GTMI indicators only |
+| Kosovo | KSV | Transactional · <https://ekosova.rks-gov.net/> | Operational · [Government Gateway (GG)](https://ashi-upi.rks-gov.net/en/) | Available | GTMI indicators only |
+| Macao SAR, China | MAC | Transactional · <https://www.mo.gov.mo/home?loginFrom=commonModule> | Absent in GTMI | Absent or unknown | GTMI indicators only |
+| Taiwan, China | TWN | Transactional · <https://www.gov.tw/> | Operational · [T-Road](https://moda.gov.tw/en/digital-affairs/digital-service/operations/232) | Available | GTMI indicators only |
+| West Bank and Gaza | WBG | Informational · <https://www.hukumati.ps> | Operational · [Zinnar interoperability platform](https://www.zinnar.gov.ps/DataBases) | Available | GTMI indicators only |

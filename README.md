@@ -12,4 +12,6 @@ To add a country, create a manifest using the [plugin contract](PLUGIN_CONTRACT.
 
 Use `--feed` to connect a synthetic Bell feed. The public distribution is intended for one local operator. The bundled manifests provide guides and demo forms. Live adapters and access to official TEST and PROD environments are evaluated service by service.
 
+The [country directory](docs/countries/README.md) documents government APIs, access conditions, use cases for Core and Bell, and open-source alternatives.
+
 Core follows the approach pioneered by [EPGU](https://github.com/yellow444/epgu) and has its own code and release cycle.
