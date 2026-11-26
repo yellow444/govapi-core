@@ -1,10 +1,10 @@
 # Germany · FIT-Connect
 
-Sources reviewed November 26, 2026. FIT-Connect is the first GovAPI pilot because its TEST environment documents self-service access, a submission interface, and a case event log. GovAPI Core currently includes a local guide and demo form. No live pilot submission has been executed.
+Sources reviewed November 26, 2026. FIT-Connect is the first GovAPI pilot because its TEST environment documents self-service access, a submission interface, and a case event log. GovAPI Core currently includes a local guide and demo form. See the [TEST pilot run log](TEST_PILOT.md) for the latest execution status.
 
 | Environment | Access and use |
 |---|---|
-| TEST | Open to interested developers through the [TEST self-service portal](https://portal.auth-testing.fit-connect.fitko.dev). Sign in with an existing GitHub, GitLab, openCode, or eligible Mein Unternehmenskonto account. FITKO does not need to activate users for TEST. The environment supports self-generated test certificates and has no availability guarantee. |
+| TEST | Open to interested developers through the [TEST self-service sign-in page](https://portal.auth-testing.fit-connect.fitko.dev/login). Sign in with an existing GitHub, GitLab, openCode, or eligible Mein Unternehmenskonto account. FITKO does not need to activate users for TEST. The environment supports self-generated test certificates and has no availability guarantee. |
 | STAGE and PROD | Separate onboarding and credentials. The account guide lists Mein Unternehmenskonto for these environments. A working TEST client does not establish production access. |
 
 [Environment guide](https://docs.fitko.de/fit-connect/docs/getting-started/environments/) · [Account and credential guide](https://docs.fitko.de/fit-connect/docs/getting-started/account/)
