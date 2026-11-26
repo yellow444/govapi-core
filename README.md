@@ -14,4 +14,6 @@ Use `--feed` to connect a synthetic Bell feed. The public distribution is intend
 
 The [country directory](docs/countries/README.md) documents government APIs, access conditions, use cases for Core and Bell, and open-source alternatives.
 
+[Roadmap](docs/project/ROADMAP.md) · [Research](docs/project/RND.md) · [Workflow](docs/project/WORKFLOW.md)
+
 Core follows the approach pioneered by [EPGU](https://github.com/yellow444/epgu) and has its own code and release cycle.
