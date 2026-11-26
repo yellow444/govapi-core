@@ -1,6 +1,6 @@
 # Public Services and Public APIs by Country
 
-[Global index](GLOBAL_INDEX.md) It covers 193 UN member states and five additional GTMI positions, 58 of which have separate official sources for interfaces, documentation and clearance, and the cards below describe specific interfaces, tolerances and the first scenario that can be verified for GovAPI Core or Bell.
+[Global index](GLOBAL_INDEX.md) It covers 193 UN member states and five additional GTMI positions, with 58 separate official sources for interfaces, documentation and clearance. [check-up](GLOBAL_INDEX.md#review-results-for-140-jurisdictions) The cards below describe specific interfaces, tolerances, and the first scenario that can be verified for GovAPI Core or Bell.
 
 | Country | Integration | Priority for the project | Plugin |
 |---|---|---|---|
