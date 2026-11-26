@@ -12,15 +12,13 @@ GovAPI Hub brings country plugins and Bell together in one interface. The public
 
 ## Current focus
 
-1. Finalize the manifest and country context. Verify that Core can read the Bell feed.
-2. Publish a quick start and run a minimal smoke check. Limit code changes to issues that prevent startup or foundation acceptance.
-3. Prepare the country guides and select the first pilot. FIT-Connect is the leading candidate for a technical demo. Smart Bridge is a candidate once a local partner confirms access.
+The public foundation has passed smoke checks from clean Core and Bell clones. The country guides and single-organization Bell guide describe the local workflow, official access requirements, and acceptance evidence.
 
-The three demo plugins and local Bell archive are already available. The live adapter and team workspace are future deliverables. Set pilot dates after access is confirmed.
+The first technical pilot uses FIT-Connect TEST. Before implementation, verify sign-in and an authorized TEST destination. The pilot must produce one synthetic submission and a structured event for the same case. Kazakhstan remains the first candidate that needs a partner. See the [pilot decision](RND.md).
 
 [Research](RND.md) · [Workflow](WORKFLOW.md) · [Country directory](../countries/README.md)
 
-## Current issues
+## Foundation verification record
 
 | Issue | Repository |
 |---|---|

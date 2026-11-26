@@ -1,27 +1,38 @@
-# Kazakhstan · KZ
+# Kazakhstan · Smart Bridge
 
-Sources verified November 25, 2026.
+Sources reviewed November 26, 2026. Smart Bridge connects an organization's information system to a service published by another organization. This guide covers the GovAPI demo and the approval path for one service. GovAPI Core currently has no live Smart Bridge adapter.
 
-## Portal and interfaces
+| Channel | Role in the flow |
+|---|---|
+| eGov and eGov Business | User-facing channels. A visible application status does not grant an external system access to it. [eGov Business](https://nitec.kz/index.php/ru/news/egov-business-gosudarstvennye-uslugi-dlya-predprinimateley-v-paru-klikov) |
+| Smart Bridge service catalog | Identifies the owner and requirements for a specific integration service. [Connection guide](https://new-sb.egov.kz/docs/ru/guides/kak-podklyuchitsya-k-servisu-na-smartbridge) |
+| eLicense | User-facing licensing and permit procedures. Select a Smart Bridge service and verify its own contract when a corresponding integration exists. [Example procedure](https://egov.kz/cms/ru/services/business_registration/reg_ip) · [Smart Bridge public services](https://new-sb.egov.kz/docs/ru/guides/kak-rabotat-s-gosuslugami) |
 
-| System system | What's up | Access and source |
-|---|---|---|
-| eGov and eGov Business | Applicants’ offices, public services and access to electronic licensing | A user channel for companies. [eGov Business](https://nitec.kz/index.php/ru/news/egov-business-gosudarstvennye-uslugi-dlya-predprinimateley-v-paru-klikov) |
-| Smart Bridge | IP connection to owner services, synchronous and asynchronous responses | An application from an authorized employee, owner approval and test integration. The asynchronous response is delivered to the agreed address. [Connection arrangements](https://new-sb.egov.kz/docs/ru/guides/kak-podklyuchitsya-k-servisu-na-smartbridge) |
-| eLicense | Licenses, Permits and Notifications of Procedures | The status of individual applications is confirmed in the personal account. the API is determined by the selected service and admission. [Example of service](https://egov.kz/cms/ru/services/business_registration/reg_ip) · [Public Service Catalog of Smart Bridge](https://new-sb.egov.kz/docs/ru/guides/kak-rabotat-s-gosuslugami) |
+## 1. Run the local demo
 
-## GovAPI Core use case
+Follow the [Core quick start](../../../README.md#quick-start). To load only Kazakhstan, run from the Core directory:
 
-The partner chooses one service, gets a passport and a TEST. Documents the service code, the message contract, IP rights, certificate requirements and network schema. Acceptance criteria is a structured response to one synthetic application. The current plugin contains a navigator and mock.
+```powershell
+python .\serve.py --plugin .\plugins\kz.json
+```
 
-## Bell use case
+Select **Kazakhstan**, enter `ORG-DEMO` and `demo-001`, then select **Get receipt**. Expect a `DEMO-` receipt. It shows that the local form and plugin work. It does not represent a Smart Bridge request or approval.
 
-For an asynchronous service, check the official response of a particular operation and the correlation key with the original request. eGov Business's total notification stream for private IP is not confirmed. Bell makes sense to include after checking the authorized source and the organization's archival or routing needs.
+## 2. Apply for access to one TEST service
 
-## Free and open-source alternatives
+1. **Identify the service and owner.** Open the service passport in the catalog. Record the identifier, version, response mode, eligible client roles, and the owner who can confirm access. Verify the selected service is available to your type of organization.
+2. **Prepare the application.** The first head of the organization or an employee with signing authority submits it. Prepare the basis for connection, responsible contact, information-system details and network scheme. Ask the service owner and operator which certificate and authentication modes apply. The guide requires organization certificates tied to the organization's BIN when the corresponding certificate check applies. [Official connection checklist](https://new-sb.egov.kz/docs/ru/guides/kak-podklyuchitsya-k-servisu-na-smartbridge)
+3. **Agree on response delivery.** For synchronous services, confirm the response schema. For asynchronous services, agree on the TEST delivery URL, request correlation field and expected acknowledgement. The operator guide requires HTTPS for the production delivery address. Keep any TEST and PROD settings separate.
+4. **Wait for approval and network setup.** The service owner approves the request and the operator configures network access. Confirm the TEST endpoint, supported schemas and permitted synthetic data. The production move follows testing and its own documentation.
 
-Documentolog Start provides basic document flow for free. Government exchange and APIs for CRM are part of Business. Publicity of the source of the product is not confirmed. SIGEX is published by the NCALayer client, which is a signature component. [Documentolog fares](https://documentolog.com/en/tariffs) · [SIGEX client code](https://github.com/sigex-kz/ncalayer-js-client)
+## 3. Verify the authorized result
 
-## Open questions
+1. Validate one synthetic request using the owner-supplied contract. Run it once in the authorized TEST environment.
+2. For a synchronous service, save the structured result and correlation field. For an asynchronous service, retain the dispatch receipt and verify the response at the agreed receiver. Match it to the original request using the documented field.
+3. Record service version, response or error code, date, and redacted identifiers. Stop and contact the owner if the network settings, rights or correlation contract are missing.
 
-The name of the service, the permissible type of organization and role, the test contract, the presence of a stable response identifier and the conditions for connecting non-state IP.
+**Decision:** keep Smart Bridge as the first partner-dependent candidate. Start a live pilot only after a participating organization and the owner of a specific service confirm the TEST path. Smart Bridge can deliver a service response. General eGov Business notifications require a separately verified source and access grant.
+
+## Source code availability
+
+[Documentolog](https://documentolog.com/en/tariffs) offers basic free document workflows and lists government exchange and CRM APIs in its Business plan. The source code for the full product was not verified. [SIGEX's NCALayer client](https://github.com/sigex-kz/ncalayer-js-client) is a public signing component.
