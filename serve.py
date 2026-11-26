@@ -27,7 +27,7 @@ def load_plugins(paths):
         try:
             profile = json.loads(path.read_text(encoding="utf-8-sig"))
             country = profile["id"]
-            require(profile["schema"] == 1)
+            require(type(profile["schema"]) is int and profile["schema"] == 1)
             require(re.fullmatch(r"[a-z]{2}", country) and country not in plugins)
             require(all(isinstance(profile[key], str) and profile[key].strip()
                        for key in ("country", "platform", "summary")))
@@ -136,7 +136,8 @@ class Handler(BaseHTTPRequestHandler):
 def read_feed(path, country):
     feed = json.loads(path.read_text(encoding="utf-8-sig"))
     if (not isinstance(feed, dict) or feed.get("country") != country or
-            feed.get("schema") != 1 or feed.get("environment") != "demo" or
+            type(feed.get("schema")) is not int or feed["schema"] != 1 or
+            feed.get("environment") != "demo" or
             not isinstance(feed.get("organization"), str) or
             not isinstance(feed.get("items"), list) or
             any(not isinstance(item, dict) or

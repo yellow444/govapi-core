@@ -1,19 +1,44 @@
 # GovAPI Core
 
-GovAPI Core provides the shared local interface for GovAPI Hub. It shows connected country plugins, connection guides, source links, and the result of a demo application. The HTTP server listens on loopback. Demo requests are processed locally.
+GovAPI Core is the shared local interface for GovAPI Hub. It shows connected country plugins, connection guides, and demo application receipts. It can also display a synthetic feed exported by GovAPI Bell.
+
+## Quick start
+
+Use Git and Python 3.11 or later. The demo uses the Python standard library. Run the commands from a directory where you want to keep the clone.
 
 ```powershell
+git clone https://github.com/yellow444/govapi-core.git
+Set-Location govapi-core
 python .\serve.py --plugin .\plugins\ru.json --plugin .\plugins\kz.json --plugin .\plugins\de.json
 ```
 
-Requirements: Python 3.11 or later. Open <http://127.0.0.1:8765>.
+Open <http://127.0.0.1:8765>. Select **Russia**, **Kazakhstan**, or **Germany** to see its connection guide. In **Demo application**, enter sample values and select **Get receipt**. A successful result starts with `DEMO-`. The receipt is generated locally and does not submit an application to a government service.
 
-To add a country, create a manifest using the [plugin contract](PLUGIN_CONTRACT.md) and pass it as another `--plugin` argument. The manifest ID identifies the country guide, the demo form, and Bell availability.
+To verify the API from a second PowerShell terminal:
 
-Use `--feed` to connect a synthetic Bell feed. The public distribution is intended for one local operator. The bundled manifests provide guides and demo forms. Live adapters and access to official TEST and PROD environments are evaluated service by service.
+```powershell
+$base = 'http://127.0.0.1:8765'
+(Invoke-RestMethod "$base/api/plugins").id
+$body = '{"country":"ru","fields":{"organization":"ORG-DEMO","service":"demo-001"}}'
+Invoke-RestMethod "$base/api/mock" -Method Post -ContentType 'application/json' -Body $body
+```
 
-The [country directory](docs/countries/README.md) documents government APIs, access conditions, use cases for Core and Bell, and open-source alternatives.
+The first command lists `ru`, `kz`, and `de`. The second returns `mode: demo`, `country: ru`, and a receipt ID. Stop the server with Ctrl+C. If the port is already in use, pass `--port 8766` and use that port in the URL.
 
-[Roadmap](docs/project/ROADMAP.md) · [Research](docs/project/RND.md) · [Workflow](docs/project/WORKFLOW.md)
+## Add the Bell demo feed
+
+Follow the [Bell quick start](https://github.com/yellow444/govapi-bell#quick-start) to clone Bell next to Core and create `feed.json`. Stop Core if it is already running, then restart it from the Core directory:
+
+```powershell
+python .\serve.py --plugin .\plugins\ru.json --plugin .\plugins\kz.json --plugin .\plugins\de.json --feed ..\govapi-bell\feed.json
+```
+
+Select **Russia** and look for two entries under **Notifications**. The bundled Kazakhstan and Germany plugins do not enable that section. Core reads demo feeds only, and it listens on loopback.
+
+## Add a country plugin
+
+Create a JSON manifest using the [country plugin contract](PLUGIN_CONTRACT.md). Pass it as a separate `--plugin` argument on startup. The manifest provides guide content and a demo form. Access to official environments and live adapters is evaluated per service.
+
+[Country directory](docs/countries/README.md) · [Roadmap](docs/project/ROADMAP.md) · [Research](docs/project/RND.md) · [Workflow](docs/project/WORKFLOW.md)
 
 Core follows the approach pioneered by [EPGU](https://github.com/yellow444/epgu) and has its own code and release cycle.
